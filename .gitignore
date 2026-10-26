@@ -1,0 +1,32 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.env
+
+# ===== 打包/构建产物 =====
+installer/dist/
+installer/build/
+installer/release.zip
+*.spec
+
+# ===== 可分发包（二进制走 GitHub Releases，不进仓库） =====
+文智汇_v1.0_setup.exe
+文智汇_v1.0.zip
+release/
+
+# ===== 内嵌的旧仓库（独立 git 仓库，不要混入本仓库） =====
+wenzhihui_repo/
+
+# ===== 运行时数据 =====
+data/
+
+# ===== IDE / 工具 / 临时 / 截图 =====
+.idea/
+.playwright-cli/
+dom_probe.js
+p3_*.png
+Thumbs.db
+Desktop.ini
+_sout.log
+_serr.log
+_rebuild_installer.ps1
